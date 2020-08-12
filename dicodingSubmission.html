@@ -4,50 +4,30 @@
         <title>Dicoding | Submission</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style type="text/css" media="screen">
-            html {
-                /*background: #bd8fba*/
-                /*background-color: #42455a;*/
-                /*background-image: url(background.jpg);
-                background-size: cover;
-                background-attachment: fixed;*/
-                background: url(background.jpg) no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-        </style>
         <link href="assets/image/graduation.png" rel="icon">
         <link rel="stylesheet" href="assets/style/DicodingSubs.css">
     </head>
-    <body>
+    <body onload="main()">
+        <header>
+            <nav>
+                <ul class="topnav mobile hidden" id="myTopnav">
+                    <li class="logo"><img src="assets/image/graduation.png"></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#soal">Soal</a></li>
+                    <li><a href="#seminar">Seminar</a></li>
+                    <li><a href="#kerja">Lowongan</a></li>
+                </ul>
+               <div class="topnav right">
+                    <li><a href="#seminar">Signin</a></li>
+                    <li><a href="#kerja">Signup</a></li>
+                    <button class="icon">
+                        <a></p>&#9776;</a>
+                    </button>
+               </div>
+            </nav>
+        </header>
         <div class="sHome">
-            <header>
-                <!--<div class="header"> 
-                    <h1>GROWTH ME</h1>
-                    <p class="pAwal"><strong>Web Pembelajaran Gratis Untuk Semua Kalangan</strong></p>
-                    <p class="pAwal">Menyediakan berbagai macam info menarik seputar dunia pendidikan, seminar, latihan soal dan lowongan pekerjaan</p>
-                </div>-->
-
-                <nav>
-                    <ul class="topnav" id="myTopnav">
-                        <li class="logo"><img src="assets/image/graduation.png"></li>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#profil">Profil</a></li>
-                        <li><a href="#soal">Soal</a></li>
-                        <li><a href="#seminar">Seminar</a></li>
-                        <li><a href="#kerja">Lowongan</a></li>
-                        <li><a href="#" class="signbtn">Sign Up</a></li>
-                        <li><a href="#" class="loginbtn">Log In</a></li>
-                        <!--<li><a href="#register">Register</a></li>
-                        <li><a href="#login">Login</a></li>-->
-                        <li class="icon">
-                            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-                        </li>
-                      </ul>
-                </nav>
-            </header>
 
             <section>
                 <div class="banner">
@@ -64,7 +44,7 @@
             <main>
                 <article>
                     <section class="bayangan">
-                        <h2 style="color: white;" class="fontS"> HOME</h2><br>
+                            <h2 style="color: white;"> HOME</h2><br>
                             <figure>
                                 <img src="assets/image/upacara.jpg" style="display: block; margin:auto; width: 60%; border:5px solid rgb(255, 255, 255); border-radius: 2%;">
                             </figure>
@@ -77,7 +57,7 @@
                             </p>
                     </section>
                         
-                    <section class="bayanganS">
+                    <section class="bayangan">
                         <figure>
                             <img src="assets/image/seminar.jpg" style="display: block; margin:auto; width: 60%; border:5px solid rgb(255, 255, 255); border-radius: 2%;">
                         </figure>
@@ -86,7 +66,7 @@
                             mencari solusi ilmiah terhadap permasalahan tersebut. Seminar ini mempunyai ciri khusus yang membedakannya dengan kegiatan atau 
                             aktivitas diskusi lainnya. Mengacu pada pengertian seminar, adapun ciri-ciri kegiatan atau aktivitas seminar diantaranya sebagai berikut:
                         </p>
-                        <p class="ciri" style="color: white;">
+                        <p style="color: white; margin-top: 1em;">
                             - Berbentuk Forum: pada umumnya kegiatan atau aktivitas seminar berbentuk forum interaksi yang melibatkan sejumlah audiens sehingga 
                             terjadi komunikasi dua arah terhadap materi yang disampaikan.<br><br>
                             - Mengacu Pada Makalah: pembahasan materi seminar ini mengacu pada makalah atau kerta kerja yang sudah disusun serta disajikan 
@@ -101,120 +81,112 @@
 
                 <main>
                     <div class="content">
-                        <div class="bayangan1">
+                        <div class="bayangan">
                             <h2 style="color: white;" id="soal" class="fontS">KUMPULAN SOAL</h2>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/akpol1.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
-                            </div>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/stan1.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
-                            </div>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/stan2.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
-                            </div>
-                            <!--<div class="list m">
-                                <a href="http://localhost"><img src="assets/image/stan3.jpg"></a>
-                            </div>-->
-                            <!--<div class="list m">
-                                <a href="http://localhost"><img src="assets/image/stan4.jpg"></a>
-                            </div>
-                            <div class="list">
-                                <a href="http://localhost"><img src="assets/image/stan5.jpg"></a>
-                            </div>-->
+                           <div class="wrapper">
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/akpol1.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/stan1.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/stan2.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
+                           </div>
                         </div>
                     </div>
                 </main>
                 
                 <main>
                     <div class="content">
-                        <div class="bayangan1">
+                        <div class="bayangan">
                             <h2 style="color: white;" id="seminar" class="fontS">SEMINAR</h2>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/seminar5.jfif" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                            <div class="wrapper">
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/seminar5.jfif" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/seminar2.jfif" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/seminar3.jfif" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
                             </div>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/seminar2.jfif" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
-                            </div>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/seminar3.jfif" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
-                            </div>
-                            <!--<div class="list m">
-                                <a href="http://localhost"><img src="assets/image/seminar4.jfif"></a>
-                            </div>-->
                         </div>    
                     </div>
                 </main>
 
                 <main>
                     <div class="content">
-                        <div class="bayangan1">
+                        <div class="bayangan">
                             <h2 style="color: white;" id="kerja" class="fontS">LOWONGAN KERJA</h2>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/low2.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                            <div class="wrapper">
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/low2.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/low3.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
+                                <div class="list">
+                                    <a href="http://localhost"><img src="assets/image/low4.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
+                                </div>
                             </div>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/low3.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
-                            </div>
-                            <div class="list m">
-                                <a href="http://localhost"><img src="assets/image/low4.jpg" style="border:5px solid rgb(255, 52, 1); border-radius: 2%;"></a>
-                            </div>
-                            <!--<div class="list m">
-                                <a href="http://localhost"><img src="assets/image/low5.png"></a>
-                            </div>-->
                         </div>    
                     </div>
                 </main>
 
-                <aside class="bayanganA">
-                    <article>
-                        <header>
+                <main>
+                    <aside class="content">
+                        <article class="bayangan">
                             <h2 style="color: white;" id="profil" class="fontA">Profil</h2>
-                            <figure>
-                               <img src="assets/image/pasPotong.png" style="display: block; margin-left: 39%; width: 20%; border:5px solid rgb(255, 255, 255); border-radius: 2%;">
-                             </figure>
-                        </header>
-                        <section>
-                            <h3 class="profile1">Data Diri</h3>
-                                <table class="profile">
-                                    <tr>
-                                        <th>Nama</th>
-                                        <td>Hafizh Daffa Septianto</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tanggal Lahir</th>
-                                        <td>05 September 2001</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Alamat</th>
-                                        <td>Ijen Nriwana Residence<br>Blok E3 No 7, Kota Malang</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Email</th>
-                                        <td>hafizhdaffa050901@gmail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <th>No Telepon</th>
-                                        <td>+6289614504876</td>
-                                    </tr>
-                                </table>
-                        </section>
-                   </article>
-                </aside>
-                <footer>
-                    <p>Belajar Dasar Pemrograman Web &copy; 2020, Dicoding Academy</p>
-                </footer>
+                            <header style="margin-top: 2em;">
+                                <figure>
+                                   <img src="assets/image/pasPotong.png" style="display: block; margin-left: 39%; width: 20%; border:5px solid rgb(255, 255, 255); border-radius: 2%;">
+                                 </figure>
+                            </header>
+                            <section style="margin-top: 1em; color: white;">
+                                <h3 class="profile1">Data Diri</h3>
+                                    <table class="profile">
+                                        <tr>
+                                            <th>Nama</th>
+                                            <td>Hafizh Daffa Septianto</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tanggal Lahir</th>
+                                            <td>05 September 2001</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Alamat</th>
+                                            <td>Ijen Nriwana Residence<br>Blok E3 No 7, Kota Malang</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Email</th>
+                                            <td>hafizhdaffa050901@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>No Telepon</th>
+                                            <td>+6289614504876</td>
+                                        </tr>
+                                    </table>
+                            </section>
+                       </article>
+                    </aside>
+                </main>
             </main>    
         </div>
-        
+        <footer>
+            <p>Belajar Dasar Pemrograman Web &copy; 2020, Dicoding Academy</p>
+        </footer>
         <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
+           function main() {
+               let btnMenu = document.querySelector('.icon');
+               let menu = document.querySelector('#myTopnav')
+
+               btnMenu.onclick = function() {
+                   menu.classList.toggle('hidden')
+               }
+           }
         </script>
     </body>
 </html>
