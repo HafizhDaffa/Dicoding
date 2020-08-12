@@ -1,383 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-*{
+:root {
+    --light-grey: rgb(98, 98, 98);
+    --main-grey: #333;
+    --padding-1: 1em;
+    --padding-2: 2em;
+    --padding-3: 4em;
+    --padding-4: 8em;
+    --padding-5: 16em;
+}
+* {
     margin: 0;
     padding: 0;
-}
-html{
-    scroll-behavior: smooth;
-}
-.sHome{
-    height: 3000 px;
-    box-sizing: border-box;
-    /*background-color: #050412;*/   
-}
-body{
-    /*menentukan font yg digunakan*/
     font-family: 'Quicksand', sans-serif;
-    
 }
-.logo img{
-    width: 30px;
-    margin-top: 10px;
-    margin-left: 15px;}
-.header{
-    font-size: 20px;
-    padding: 40px;
-    margin-top: 0;
-    /*background-color: #290a2c;*/
-    /*background-color: #48054e;*/
-    background-color: #919b05;
-    text-align: center;
-    /*color: rgb(255, 255, 255);*/
-    /*color: #ffffff;*/
+html {
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+.sHome {
+    padding: 0 var(--padding-3);
+    margin-top: var(--padding-4);
 }
-h1 {
-    font-family: monospace;
+body > header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-grey);
+    align-items: center;
+    padding: 0 var(--padding-2);
 }
-ul.topnav li {
-    float: left;
-}
-ul.topnav li a {
-    display: inline-block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-    font-family:'Quicksand', sans-serif;
 
+header > nav > .topnav {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
 }
-ul.topnav li a:hover {
-    background-color: #555;
+header > nav > .topnav.right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
 }
-ul.topnav li.icon {
+header > nav > .topnav > li {
+    padding: 5px;
+    text-decoration: none;
+}
+
+header > nav a {
+    text-decoration: none;
+    color: #fff;
+}
+header > nav > .topnav > li.logo img {
+    width: 50px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+.banner > .judul {
+    margin-right: var(--padding-2);
+    color: #fff;
+    font-size: 1.15rem;
+}
+.banner > .pict {
+    margin-left: var(--padding-2);
+}
+.banner > .judul > .awal {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    margin-bottom: var(--padding-1);
+}
+.bayangan {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 1);
+    padding: var(--padding-2);
+    margin: var(--padding-3) 0;
+    border-radius: 16px;
+}
+
+.bayangan > h2 {
+    text-align: center;
+}
+.bayangan > .paragraf {
+    margin-top: var(--padding-1);
+    text-indent: var(--padding-3);
+    text-align: justify;
+}
+
+main .content .bayangan .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+main .content .bayangan .wrapper .list {
+    margin-top: var(--padding-2);
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+}
+main .content .bayangan .wrapper .list:nth-child(2) {
+    transform: scale(1.05);
+}
+main .content .bayangan .wrapper .list:hover {
+    transform: scale(1.20);
+}
+.profile th {
+    padding-right: var(--padding-1);
+    text-align: left;
+}
+button.icon {
+    background: transparent;
+    border: none;
+    padding: var(--padding-1);
     display: none;
 }
-.pAwal{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 2%;
-    color: white;
-}
-footer,
-header,
-main,
-nav,
-section {
-	display: block;
-}
-/*nav {
-    background-color: #3b3939;
-    padding: 10px;
-}
-a{
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-    color: white;
-    
-}
-nav li{
-    
-    display: inline;
-    justify-content: center;
-    list-style-type: none;
-    margin-right: 14px;
-}*/
-.bayangan{
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 35%;
-    width: 77%;
-    margin-left: 10%;
-}
-.bayanganS{
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 5%;
-    width: 77%;
-    margin-left: 10%;
-}
-.bayangan1{
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 10%;
-    width: 96%;
-    height: 500px;
-    margin-left: 0;
-}
-.bayanganA{
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 8%;
-    width: 80%;
-    height: 5%;
-    margin-left: 8.5%;
-}
-.signbtn{
-    top: 2px;
-    right: 30px;
-    position: absolute;
-    text-decoration: none;
-    color: #ffffff;
-}
-.loginbtn{
-    top: 2px;
-    right: 110px;
-    position: absolute;
-    text-decoration: none;
-    color: #ffffff;
-}
-.judul{
-    width: 50%;
-    float: left;
-}
-.awal{
-    font-size: 50px;
-    width: 640px;
-    position: relative;
-    margin-left: 40px;
-}
-.kedua{
-    font-size: 23px;
-    width: 650px;
-    text-align: justify;
-    position: relative;
-    margin: 30px 0 30px 40px;
-    line-height: 25px;
-    color: white;
-}
-.banner{
-    width: 80%;
-    height: 70%;
-    top: 25%;
-    left: 130px;
-    position: absolute;
-    color: white;
-}
-.pict{
-    width:45%;
-    float: right;
-}
-.pict img{
+footer {
+    background: var(--main-grey);
     width: 100%;
-    margin-top: -10px;
-    padding-left: 0;
-}
-.fontS{
-    margin-top: 0%;
-    font-family:'Quicksand', sans-serif;
-    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-2);
+    color: white;
+    box-sizing: border-box;
     text-align: center;
 }
-.fontA{
-    margin-top: 0%;
-    font-family:'Quicksand', sans-serif;
-    font-size: 200%;
-    margin-left: 45%;
-}
-.paragraf{
-    font-size: 20px;
-    text-align: justify;
-    text-indent: 60px;
-    word-spacing: 5px;
-    letter-spacing: 1px;
-}
-.ciri{
-    text-align: justify; 
-    font-size: 20px;
-}
-p{
-    font-family: 'Quicksand',sans-serif;
-    margin-top: 20px;
-}
-.list{
-    float: left;
-    margin-bottom: 5%;
-    margin-top: 20px;
-    transition: transform .2s;
-    height: 1px;
-}
-.m{
-    /*margin-right: 101px;*/
-    margin-bottom: 35%;
-    margin-left: 80px;
-}
-.list:hover {
-    transform: scale(1.5);
-}
-.image{
-    height: 1100px;
-    width: 83.5%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.content{
-    height: 500px;
-    width: 83.5%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.profile{
-    margin-top: 0;
-    margin-left: 34%;
-}
-.profile1{
-    margin-top: 1%;
-    margin-left: 45%;
-}
-aside {
-    margin-left: 10%;
-    color: white;
-}
-footer{
-    /*mengubah warna bg dan warna text*/
-    padding: 40px;
-    color: white;
-    background-color: #333;
-    margin-top: 10%;
-    font-family: 'Quicksand',sans-serif;
-    text-align: center;
-    }
-
-@media screen and (max-width: 411px){
-
-    body{
-        width: 411px;
-    }
-    .judul{
-        width: 50%;
-        float: left;
-    }
-    .awal{
-        font-size: 30px;
-        width: 640px;
-        position: relative;
-        margin-left: 5px;
-    }
-    .kedua{
-        font-size: 10px;
-        width: 650px;
-        text-align: justify;
-        position: relative;
-        margin: 130px 0 30px -30px;
-        line-height: 25px;
-        color: white;
-    }
-    .bayangan{
-        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 1);
-        border-radius: 20px;
-        padding: 20px;
-        margin-top: 110%;
-        width: 77%;
-        margin-left: 7%;
-    }
-    .pict{
-        width:45%;
-    }
-    .pict img{
-        width: 100%;
-        margin-top: 60px;
-        padding-left: 0;
-        margin-left: -150px;
-    }
-    .list{
-        float: left;
-        margin-bottom: 100%;
-        margin-top: 20px;
-        transition: transform .2s;
-        height: 1px;
-    }
-    .m{
-        /*margin-right: 101px;*/
-        margin-bottom: 100%;
-        margin-left: -80px;
-    }
-
-}
-
-/*544*/
-@media screen and (max-width: 680px){
-    html{
-        left: 100%;
-        margin-left: 100px;   /* 50% */
-    }
-    ul.topnav li:not(:first-child){
+@media screen and (max-width: 960pc) {
+    .banner .pict{
         display: none;
     }
-    ul.topnav li.icon {
-      float: right;
-      display: block;
-    }
-    .header{
-        font-size: 15px;
-        padding: 20px;
-        margin-top: 0;
-    }
-    .fontS{
-    margin-top: 2%;
-    font-size: 150%;
-    text-align: center;
-    }
-    .paragraf{
-        font-size: 10px;
-        text-align: justify;
-        text-indent: 70px;
-        word-spacing: 5px;
-        letter-spacing: 1px;
-    }
-    .ciri{
-        font-size: 10px;
-    }
-    .content{
-        height: 1250px;
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .list{
-        float: left;
-        margin-bottom: 5%;
-        margin-top: 20px;
-        transition: transform .2s;
-        height: 1px;
-    }
-    .m{
-        margin-right: 20px;
-        margin-bottom: 130%;
-    }
-    .list:hover {
-        transform: scale(1.5);
+    main .content .bayangan .wrapper .list img {
+        width: 90%;
     }
 }
-
-@media screen and (max-width: 680px){
-    ul.topnav.responsive {
-        position: relative;
-    }
-    ul.topnav.responsive li.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    ul.topnav.responsive li {
-        float: none;
-        display: inline;
-    }
-    ul.topnav.responsive li a {
+@media screen and (max-width: 600px) {
+    button.icon {
         display: block;
-        text-align: left;
+    }
+    header nav .topnav.mobile {
+        height: 100px;
+        flex-direction: column;
+        position: fixed;
+        background: var(--main-grey);
+        height: auto;
+        top: 50px;
+        right: 0;
+        border-radius: 5px;
+        transition: all .1s;
+    }
+    header nav .topnav.mobile > * {
+        padding: var(--padding-1);
+        flex: 1;
+    }
+    header nav .topnav.mobile.hidden {
+        transform: scale(0);
+    }
+    .sHome {
+        padding: 0 var(--padding-1);
+        margin-top: var(--padding-4);
     }
 }
